@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(233, 222, 209);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    background-color: rgb(53, 70, 70);
+}
+
+nav a:hover {
+    color: black;
+}
+
+footer {
+    background-color: rgb(53, 70, 70);
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+header {
+    background-color: rgb(53, 70, 70);
+}
+
+nav {
+    grid-area: nav;
+}
+
+section#noticiaDestacada {
+    grid-area: not;
+    margin-top: 100px;
+}
+
+section#noticiaDestacadaUno {
+    grid-area: notUno;
+}
+
+section#noticiaDestacadaDos {
+    grid-area: notDos;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.logo {
+    min-height: 100px;
+    max-width: 200px;
+}
+
+
+@media(min-widht:480px) {
+    .grilla {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "not"
+            "notUno"
+            "notDos"
+            "footer";
+        gap: 5px;
+    }
+
+}
+
+@media(min-width:480px) {
+    #fotoBts {
+        height: 200px;
+        width: 300px;
+    }
+
+    .fotoNot {
+        height: 200px;
+        width: 300px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-decoration: none;
+        margin-top: 10%;
+    }
+
+    nav ul li{
+        list-style: none;
+    }
+
+    nav ul li a {
+        margin-right: 10px;
+    }
+
+    #mvBts{
+        height: 200px;
+        width: 300px;
+    }
+
+    .logo{
+        display: none;
+    }
+}
+
+@media(min-width:1024px) {
+    .grilla {
+        display: grid;
+        grid-template-areas:
+            "nav header"
+            "nav not"
+            "nav notUno"
+            "nav notDos"
+            "nav footer";
+        grid-template-columns: 20% auto;
+        grid-template-rows: 50px 2fr 2fr 2fr 100px;
+        gap: 10px;
+    }
+
+    img#fotoBts {
+        height: 320px;
+        width: 600px;
+    }
+
+    .fotoNot {
+        margin-top: 50px;
+        height: 120px;
+        width: 200px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .noticiasDestacadas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    h3 {
+        margin-top: 85px;
+        margin-right: 650px;
+    }
+
+    .tituloBts {
+        border-color: rgb(53, 70, 70);
+    }
+
+    #mvBts{
+        height: 320px;
+        width: 600px;
+    }
+
+    .btsMv{
+        margin-top: 20px;
+    }
+}
