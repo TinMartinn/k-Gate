@@ -30,7 +30,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: auto;
 }
 
 header {
@@ -65,6 +65,21 @@ footer {
 .logo {
     min-height: 100px;
     max-width: 200px;
+}
+
+#fotoBts {
+    height: 200px;
+    width: 300px;
+}
+
+.fotoNot {
+    height: 200px;
+    width: 300px;
+}
+
+#mvBts{
+    height: 200px;
+    width: 300px;
 }
 
 
@@ -154,7 +169,13 @@ footer {
     .logo{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        margin: auto;
+        transition: all 1s;
+    }
+
+    .logo:hover{
+        transform: scale(1.2);
     }
 
     .noticiasDestacadas {
