@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat:ital,wght@1,300&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -9,15 +11,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: rgb(233, 222, 209);
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-nav {
-    background-color: rgb(53, 70, 70);
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav a:hover {
@@ -77,11 +71,35 @@ footer {
     width: 300px;
 }
 
-#mvBts{
-    height: 200px;
-    width: 300px;
+
+.colorNav {
+    font-family: 'Arvo', serif;
+    background-color: rgb(53, 70, 70)
 }
 
+.logo {
+    display: none;
+}
+
+.form{
+    background-color: rgb(53, 70, 70);
+    margin: 20vh;
+    border-radius: 20%;
+    padding: 20vh;
+}
+
+.tituloForm{
+    margin-top: 10vh;
+}
+
+
+h1{
+    font-family: 'Arvo', serif;
+}
+
+
+
+/*----------------mobile----------------*/
 
 @media(min-widht:480px) {
     .grilla {
@@ -117,7 +135,7 @@ footer {
         margin-top: 10%;
     }
 
-    nav ul li{
+    nav ul li {
         list-style: none;
     }
 
@@ -125,17 +143,16 @@ footer {
         margin-right: 10px;
     }
 
-    #mvBts{
+    #mvBts {
         height: 200px;
         width: 300px;
     }
 
-    .logo{
-        display: none;
-    }
 }
 
-@media(min-width:1024px) {
+/*----------------desktop---------------*/
+
+@media(min-width:990px) {
     .grilla {
         display: grid;
         grid-template-areas:
@@ -155,26 +172,28 @@ footer {
     }
 
     .fotoNot {
-        margin-top: 50px;
+        margin-top: 18vh;
         height: 120px;
         width: 200px;
     }
 
-    nav ul {
-        display: flex;
+    .navbar .container-fluid,
+    .navbar-expand-lg .navbar-nav {
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        margin-bottom: 200vh;
     }
 
-    .logo{
+
+    .logo {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: auto;
         transition: all 1s;
+        margin-left: 5%;
     }
 
-    .logo:hover{
+    .logo:hover {
         transform: scale(1.2);
     }
 
@@ -185,20 +204,31 @@ footer {
     }
 
     h3 {
-        margin-top: 85px;
-        margin-right: 650px;
+        margin-top: 20vh;
+        margin-right: 80vh;
+    }
+
+    h2{
+        margin-top: 10vh;;
     }
 
     .tituloBts {
         border-color: rgb(53, 70, 70);
     }
 
-    #mvBts{
+    #mvBts {
         height: 320px;
         width: 600px;
     }
 
-    .btsMv{
+    .btsMv {
         margin-top: 20px;
+    }
+
+    .noticisBbSecundarias{
+        background-color: rgb(53, 70, 70);
+        margin: 5vh;
+        padding: 10vh;
+        border-radius: 10%;
     }
 }
