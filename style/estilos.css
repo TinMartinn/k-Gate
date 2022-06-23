@@ -81,22 +81,22 @@ footer {
     display: none;
 }
 
-.form{
+.form {
     background-color: rgb(53, 70, 70);
     border-radius: 20%;
-    padding: 20vh;
+    padding: 15vh;
 }
 
-.tituloForm{
+.tituloForm {
     margin-top: 10vh;
 }
 
 
-h1{
+h1 {
     font-family: 'Arvo', serif;
 }
 
-.mv{
+.mv {
     height: 300px;
     width: 50%;
 }
@@ -138,14 +138,26 @@ h1{
     }
 
     img#fotoBts {
+        border-radius: 10%;
         height: 320px;
         width: 600px;
+        transition: all 0.5s;
     }
 
     .fotoNot {
+        border-radius: 10%;
         margin-top: 18vh;
         height: 120px;
         width: 200px;
+        transition: all 0.5s;
+    }
+
+    #fotoBts:hover {
+        transform: scale(1.1);
+    }
+
+    .fotoNot:hover {
+        transform: scale(1.1);
     }
 
     .navbar .container-fluid,
@@ -179,24 +191,20 @@ h1{
         margin-right: 80vh;
     }
 
-    h2{
-        margin-top: 10vh;;
+    h2 {
+        margin-top: 5vh;
+        ;
     }
 
     .tituloBts {
         border-color: rgb(53, 70, 70);
     }
 
-    #mvBts {
-        height: 320px;
-        width: 600px;
-    }
-
     .btsMv {
         margin-top: 20px;
     }
 
-    .noticisBbSecundarias{
+    .noticisBbSecundarias {
         background-color: rgb(53, 70, 70);
         margin: 5vh;
         padding: 10vh;
