@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat:ital,wght@1,300&display=swap');
 
+
 * {
     padding: 0;
     margin: 0;
@@ -14,8 +15,13 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-nav a:hover {
-    color: black;
+header {
+    background-color: rgb(53, 70, 70);
+
+    h1 {
+        font-family: 'Arvo', serif;
+    }
+
 }
 
 footer {
@@ -25,14 +31,6 @@ footer {
     flex-direction: row;
     justify-content: center;
     margin-top: auto;
-}
-
-header {
-    background-color: rgb(53, 70, 70);
-}
-
-nav {
-    grid-area: nav;
 }
 
 section#noticiaDestacada {
@@ -54,6 +52,14 @@ header {
 
 footer {
     grid-area: footer;
+}
+
+nav {
+    grid-area: nav;
+
+    & a:hover {
+        color: black;
+    }
 }
 
 .logo {
@@ -91,9 +97,18 @@ footer {
     margin-top: 10vh;
 }
 
+.logo {
+    display: none;
+}
 
-h1 {
-    font-family: 'Arvo', serif;
+.form {
+    background-color: rgb(53, 70, 70);
+    border-radius: 20%;
+    padding: 15vh;
+}
+
+.tituloForm {
+    margin-top: 10vh;
 }
 
 .mv {
@@ -101,9 +116,6 @@ h1 {
     width: 50%;
 }
 
-
-
-/*----------------mobile----------------*/
 
 @media(min-widht:480px) {
     .grilla {
@@ -120,8 +132,6 @@ h1 {
 
 }
 
-
-/*----------------desktop---------------*/
 
 @media(min-width:990px) {
     .grilla {
@@ -142,6 +152,10 @@ h1 {
         height: 320px;
         width: 600px;
         transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     .fotoNot {
@@ -150,14 +164,10 @@ h1 {
         height: 120px;
         width: 200px;
         transition: all 0.5s;
-    }
 
-    #fotoBts:hover {
-        transform: scale(1.1);
-    }
-
-    .fotoNot:hover {
-        transform: scale(1.1);
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     .navbar .container-fluid,
@@ -167,28 +177,28 @@ h1 {
         margin-bottom: 200vh;
     }
 
-
     .logo {
         display: flex;
         flex-direction: column;
         justify-content: center;
         transition: all 1s;
         margin-left: 5%;
-    }
 
-    .logo:hover {
-        transform: scale(1.2);
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     .noticiasDestacadas {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
 
-    h3 {
-        margin-top: 20vh;
-        margin-right: 80vh;
+        h3 {
+            margin-top: 20vh;
+            margin-right: 80vh;
+        }
+
     }
 
     h2 {
@@ -210,4 +220,5 @@ h1 {
         padding: 10vh;
         border-radius: 10%;
     }
+
 }

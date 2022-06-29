@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat:ital,wght@1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e9ded1;
+  font-family: 'Montserrat', sans-serif; }
+
+header {
+  background-color: #354646; }
+  header h1 {
+    font-family: 'Arvo', serif; }
+
+footer {
+  background-color: #354646;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: auto; }
+
+section#noticiaDestacada {
+  grid-area: not;
+  margin-top: 100px; }
+
+section#noticiaDestacadaUno {
+  grid-area: notUno; }
+
+section#noticiaDestacadaDos {
+  grid-area: notDos; }
+
+header {
+  grid-area: header; }
+
+footer {
+  grid-area: footer; }
+
+nav {
+  grid-area: nav; }
+  nav a:hover {
+    color: black; }
+
+.logo {
+  min-height: 100px;
+  max-width: 200px; }
+
+#fotoBts {
+  height: 300px;
+  width: 100%; }
+
+.fotoNot {
+  height: 300px;
+  width: 100%; }
+
+.colorNav {
+  font-family: 'Arvo', serif;
+  background-color: #354646; }
+
+.logo {
+  display: none; }
+
+.form {
+  background-color: #354646;
+  border-radius: 20%;
+  padding: 15vh; }
+
+.tituloForm {
+  margin-top: 10vh; }
+
+.logo {
+  display: none; }
+
+.form {
+  background-color: #354646;
+  border-radius: 20%;
+  padding: 15vh; }
+
+.tituloForm {
+  margin-top: 10vh; }
+
+.mv {
+  height: 300px;
+  width: 50%; }
+
+@media (min-widht: 480px) {
+  .grilla {
+    display: grid;
+    grid-template-areas: "header" "nav" "not" "notUno" "notDos" "footer";
+    gap: 5px; } }
+
+@media (min-width: 990px) {
+  .grilla {
+    display: grid;
+    grid-template-areas: "nav header" "nav not" "nav notUno" "nav notDos" "nav footer";
+    grid-template-columns: 20% auto;
+    grid-template-rows: 50px 2fr 2fr 2fr 100px;
+    gap: 10px; }
+  img#fotoBts {
+    border-radius: 10%;
+    height: 320px;
+    width: 600px;
+    transition: all 0.5s; }
+    img#fotoBts:hover {
+      transform: scale(1.1); }
+  .fotoNot {
+    border-radius: 10%;
+    margin-top: 18vh;
+    height: 120px;
+    width: 200px;
+    transition: all 0.5s; }
+    .fotoNot:hover {
+      transform: scale(1.1); }
+  .navbar .container-fluid,
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 200vh; }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
+    margin-left: 5%; }
+    .logo:hover {
+      transform: scale(1.2); }
+  .noticiasDestacadas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .noticiasDestacadas h3 {
+      margin-top: 20vh;
+      margin-right: 80vh; }
+  h2 {
+    margin-top: 5vh; }
+  .tituloBts {
+    border-color: #354646; }
+  .btsMv {
+    margin-top: 20px; }
+  .noticisBbSecundarias {
+    background-color: #354646;
+    margin: 5vh;
+    padding: 10vh;
+    border-radius: 10%; } }
