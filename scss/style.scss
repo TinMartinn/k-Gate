@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat:ital,wght@1,300&display=swap');
-
+@import "mixins";
+@import "operaciones";
+@import "maps";
 
 * {
     padding: 0;
@@ -11,12 +13,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(233, 222, 209);
+    background-color: map-get($map: $colores, $key:"fondoMain");
     font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    background-color: rgb(53, 70, 70);
+    background-color: map-get($map: $colores, $key:"fondoColor");
 
     h1 {
         font-family: 'Arvo', serif;
@@ -25,7 +27,7 @@ header {
 }
 
 footer {
-    background-color: rgb(53, 70, 70);
+    background-color: map-get($map: $colores, $key: "fondoColor");
     margin-bottom: 0;
     display: flex;
     flex-direction: row;
@@ -68,19 +70,17 @@ nav {
 }
 
 #fotoBts {
-    height: 300px;
-    width: 100%;
+    @include tamanioFoto;
 }
 
 .fotoNot {
-    height: 300px;
-    width: 100%;
+    @include tamanioFoto;
 }
 
 
 .colorNav {
     font-family: 'Arvo', serif;
-    background-color: rgb(53, 70, 70)
+    background-color: map-get($map: $colores, $key: "fondoColor");
 }
 
 .logo {
@@ -88,8 +88,8 @@ nav {
 }
 
 .form {
-    background-color: rgb(53, 70, 70);
-    border-radius: 20%;
+    background-color: map-get($map: $colores, $key:"fondoColor");
+    border-radius: 10%;
     padding: 15vh;
 }
 
@@ -101,11 +101,6 @@ nav {
     display: none;
 }
 
-.form {
-    background-color: rgb(53, 70, 70);
-    border-radius: 20%;
-    padding: 15vh;
-}
 
 .tituloForm {
     margin-top: 10vh;
@@ -201,11 +196,6 @@ nav {
 
     }
 
-    h2 {
-        margin-top: 5vh;
-        ;
-    }
-
     .tituloBts {
         border-color: rgb(53, 70, 70);
     }
@@ -215,7 +205,7 @@ nav {
     }
 
     .noticisBbSecundarias {
-        background-color: rgb(53, 70, 70);
+        background-color: map-get($map: $colores, $key: "fondoColores");
         margin: 5vh;
         padding: 10vh;
         border-radius: 10%;
