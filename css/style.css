@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat:ital,wght@1,300&display=swap");
+h1, h2 {
+  font-family: 'Arvo', serif; }
+
+h2 {
+  margin-top: 5vh; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -13,7 +19,7 @@ body {
 
 header {
   background-color: #354646; }
-  header h1 {
+  header h1, header h2 {
     font-family: 'Arvo', serif; }
 
 footer {
@@ -66,7 +72,7 @@ nav {
 
 .form {
   background-color: #354646;
-  border-radius: 20%;
+  border-radius: 10%;
   padding: 15vh; }
 
 .tituloForm {
@@ -74,11 +80,6 @@ nav {
 
 .logo {
   display: none; }
-
-.form {
-  background-color: #354646;
-  border-radius: 20%;
-  padding: 15vh; }
 
 .tituloForm {
   margin-top: 10vh; }
@@ -135,14 +136,11 @@ nav {
     .noticiasDestacadas h3 {
       margin-top: 20vh;
       margin-right: 80vh; }
-  h2 {
-    margin-top: 5vh; }
   .tituloBts {
     border-color: #354646; }
   .btsMv {
     margin-top: 20px; }
   .noticisBbSecundarias {
-    background-color: #354646;
     margin: 5vh;
     padding: 10vh;
     border-radius: 10%; } }
