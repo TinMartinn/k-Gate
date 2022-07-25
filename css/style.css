@@ -12,6 +12,8 @@ footer {
   flex-direction: row;
   justify-content: center;
   margin-top: auto; }
+  footer p {
+    color: #edbb3c; }
 
 * {
   padding: 0;
@@ -73,7 +75,8 @@ nav {
 .form {
   background-color: #354646;
   border-radius: 10%;
-  padding: 15vh; }
+  padding: 10%;
+  margin: 10%; }
 
 .tituloForm {
   margin-top: 10vh; }
@@ -87,6 +90,21 @@ nav {
 .mv {
   height: 300px;
   width: 50%; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #edbb3c; }
+
+.btn-primary {
+  color: #354646;
+  background-color: #edbb3c;
+  border-color: #e9ded1; }
+  .btn-primary:hover {
+    color: #354646;
+    background-color: #e9ded1; }
+
+.card {
+  background-color: #354646;
+  color: #edbb3c; }
 
 @media (min-widht: 480px) {
   .grilla {

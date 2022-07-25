@@ -5,4 +5,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     margin-top: auto;
+    p{
+        color: map-get($map: $colores, $key: "fondoLetras");
+    }
 }

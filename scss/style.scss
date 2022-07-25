@@ -14,12 +14,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: map-get($map: $colores, $key:"fondoMain");
+    background-color: map-get($map: $colores, $key: "fondoMain");
     font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    background-color: map-get($map: $colores, $key:"fondoColor");
+    background-color: map-get($map: $colores, $key: "fondoColor");
 
     h1 {
         font-family: 'Arvo', serif;
@@ -30,7 +30,7 @@ header {
 
 
 section#noticiaDestacada {
-    grid-area: not;                      
+    grid-area: not;
     margin-top: 100px;
 }
 
@@ -82,9 +82,10 @@ nav {
 }
 
 .form {
-    background-color: map-get($map: $colores, $key:"fondoColor");
+    background-color: map-get($map: $colores, $key: "fondoColor");
     border-radius: 10%;
-    padding: 15vh;
+    padding: 10%;
+    margin: 10%;
 }
 
 .tituloForm {
@@ -103,6 +104,26 @@ nav {
 .mv {
     height: 300px;
     width: 50%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: map-get($map: $colores, $key: "fondoLetras");
+}
+
+.btn-primary {
+    color: map-get($map: $colores, $key: "fondoColor");
+    background-color: map-get($map: $colores, $key: "fondoLetras");
+    border-color: map-get($map: $colores, $key: "fondoMain");
+
+    &:hover {
+        color: map-get($map: $colores, $key: "fondoColor");
+        background-color: map-get($map: $colores, $key: "fondoMain");
+    }
+}
+
+.card {
+    background-color: map-get($map: $colores, $key: "fondoColor");
+    color: map-get($map: $colores, $key: "fondoLetras");
 }
 
 
@@ -135,6 +156,8 @@ nav {
         grid-template-rows: 50px 2fr 2fr 2fr 100px;
         gap: 10px;
     }
+
+
 
     img#fotoBts {
         border-radius: 10%;
